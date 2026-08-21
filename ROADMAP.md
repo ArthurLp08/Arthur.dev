@@ -158,44 +158,6 @@ Os projetos devem ser a parte visualmente mais forte do portfólio.
 
 Os três projetos devem possuir uma apresentação consistente, mas cada um deve manter sua própria identidade visual.
 
-## Objetivo
-
-Criar a principal seção de portfólio.
-
-## Projetos
-
-### Corrige-Me
-
-- [ ] Criar card
-- [ ] Preview
-- [ ] Descrição
-- [ ] Tecnologias
-- [ ] Link para projeto
-- [ ] Link para GitHub
-
-### FinTrack
-
-- [ ] Criar card
-- [ ] Preview
-- [ ] Descrição
-- [ ] Tecnologias
-- [ ] Link para projeto
-- [ ] Link para GitHub
-
-## UX
-
-- [ ] Hover
-- [ ] Microinterações
-- [ ] Animação de entrada
-- [ ] Responsividade
-- [ ] Acessibilidade
-
-## Critério de conclusão
-
-Os projetos devem ser a parte visualmente mais forte do portfólio.
-
----
-
 # FASE 5 — Experiência e trajetória
 
 ## Objetivo
