@@ -100,7 +100,10 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="order-first mx-auto w-full max-w-[280px] sm:max-w-xs lg:order-none">
+        <motion.div
+          variants={item}
+          className="order-first mx-auto w-full max-w-[280px] sm:max-w-xs lg:order-none"
+        >
           <div className="relative">
             <div
               aria-hidden
@@ -115,7 +118,7 @@ export function Hero() {
               className="aspect-square w-full rounded-full border border-border object-cover"
             />
           </div>
-        </div>
+        </motion.div>
       </motion.div>
 
       <motion.a
