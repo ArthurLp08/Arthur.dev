@@ -119,38 +119,38 @@ Criar a principal seção de portfólio.
 
 ### Corrige-Me
 
-- [ ] Criar card
-- [ ] Preview
-- [ ] Descrição
-- [ ] Tecnologias
+- [x] Criar card
+- [x] Preview
+- [x] Descrição
+- [x] Tecnologias
 - [ ] Link para projeto
 - [ ] Link para GitHub
 
 ### FinTrack
 
-- [ ] Criar card
-- [ ] Preview
-- [ ] Descrição
-- [ ] Tecnologias
+- [x] Criar card
+- [x] Preview
+- [x] Descrição
+- [x] Tecnologias
 - [ ] Link para projeto
 - [ ] Link para GitHub
 
 ### Vaultify
 
-- [ ] Criar card
-- [ ] Preview
-- [ ] Descrição
-- [ ] Tecnologias
+- [x] Criar card
+- [x] Preview
+- [x] Descrição
+- [x] Tecnologias
 - [ ] Link para projeto
 - [ ] Link para GitHub
 
 ## UX
 
-- [ ] Hover
-- [ ] Microinterações
-- [ ] Animação de entrada
-- [ ] Responsividade
-- [ ] Acessibilidade
+- [x] Hover
+- [x] Microinterações
+- [x] Animação de entrada
+- [x] Responsividade
+- [x] Acessibilidade
 
 ## Critério de conclusão
 
@@ -249,7 +249,7 @@ Polir toda a experiência.
 
 - [ ] Revisar animações
 - [ ] Remover animações desnecessárias
-- [x] Adicionar microinterações onde fizer sentido
+- [ ] Adicionar microinterações onde fizer sentido
 - [ ] Respeitar reduced motion
 
 ## Critério de conclusão
