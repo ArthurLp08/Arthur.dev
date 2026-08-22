@@ -294,15 +294,15 @@ Nenhuma seção apresenta overflow ou quebra visual.
 
 ## Tarefas
 
-- [ ] Otimizar imagens
-- [ ] Utilizar next/image
-- [ ] Revisar Client Components
-- [ ] Revisar animações
-- [ ] Metadata
-- [ ] Open Graph
-- [ ] Favicon
-- [ ] SEO básico
-- [ ] Verificar performance
+- [X] Otimizar imagens
+- [X] Utilizar next/image
+- [X] Revisar Client Components
+- [X] Revisar animações
+- [X] Metadata
+- [X] Open Graph
+- [X] Favicon
+- [X] SEO básico
+- [X] Verificar performance
 
 ## Critério de conclusão
 

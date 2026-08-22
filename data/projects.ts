@@ -29,7 +29,7 @@ export const projects = [
       "Aplicação para gerenciamento e visualização de finanças pessoais.",
     image: "/projects/fintrack.jpg",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
-    liveUrl: "fiintrack.vercel.app",
+    liveUrl: "https://fiintrack.vercel.app",
     repoUrl: "https://github.com/ArthurLp08/Fintrack",
   },
   {

@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { MotionProvider } from "@/components/common/motion-provider";
 import { MouseGlow } from "@/components/common/mouse-glow";
 import { Preloader } from "@/components/common/preloader";
+import { profile } from "@/data/profile";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,10 +17,51 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = `${profile.name} — ${profile.role}`;
+const description =
+  "Portfólio de Arthur Lopes, desenvolvedor Front-end em formação, focado em React, Next.js e TypeScript.";
+
 export const metadata: Metadata = {
-  title: "Arthur Lopes — Front-end Developer",
-  description:
-    "Portfólio de Arthur Lopes, desenvolvedor Front-end em formação, focado em React, Next.js e TypeScript.",
+  metadataBase: siteUrl,
+  title: {
+    default: title,
+    template: `%s — ${profile.name}`,
+  },
+  description,
+  keywords: [
+    "Arthur Lopes",
+    "Front-end Developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Portfólio",
+  ],
+  authors: [{ name: profile.name }],
+  creator: profile.name,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/",
+    siteName: title,
+    title,
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

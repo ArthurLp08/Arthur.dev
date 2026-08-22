@@ -115,6 +115,7 @@ export function Hero() {
               width={320}
               height={320}
               priority
+              sizes="(min-width: 640px) 384px, 280px"
               className="aspect-square w-full rounded-full border border-border object-cover"
             />
           </div>
