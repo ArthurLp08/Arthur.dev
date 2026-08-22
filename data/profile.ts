@@ -3,6 +3,7 @@ export const profile = {
   role: "Front-end Developer",
   githubUrl: "https://github.com/ArthurLp08",
   linkedinUrl: "https://www.linkedin.com/in/arthurlp08/",
+  instagramUrl: "https://www.instagram.com/arthur.lops08",
   email: "josearthurlda@gmail.com",
 } as const;
 

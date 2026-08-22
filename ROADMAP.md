@@ -314,14 +314,14 @@ O portfólio deve carregar rapidamente e possuir metadata adequada para comparti
 
 ## Tarefas
 
-- [ ] Configurar Vercel
-- [ ] Configurar domínio quando disponível
-- [ ] Testar produção
-- [ ] Testar links
-- [ ] Testar mobile
-- [ ] Testar GitHub
-- [ ] Testar LinkedIn
-- [ ] Testar email
+- [X] Configurar Vercel
+- [X] Configurar domínio quando disponível
+- [X] Testar produção
+- [X] Testar links
+- [X] Testar mobile
+- [X] Testar GitHub
+- [X] Testar LinkedIn
+- [X] Testar email
 
 ## Critério de conclusão
 
@@ -333,18 +333,18 @@ O portfólio está disponível publicamente e todos os links principais funciona
 
 ## Checklist
 
-- [ ] Não existem informações falsas
-- [ ] Todos os projetos possuem informações corretas
-- [ ] Links funcionam
-- [ ] Mobile funciona
-- [ ] Desktop funciona
-- [ ] Animações funcionam
-- [ ] Reduced motion funciona
-- [ ] SEO configurado
-- [ ] Performance aceitável
-- [ ] Acessibilidade básica
-- [ ] Código organizado
-- [ ] Design consistente
+- [X] Não existem informações falsas
+- [X] Todos os projetos possuem informações corretas
+- [X] Links funcionam
+- [X] Mobile funciona
+- [X] Desktop funciona
+- [X] Animações funcionam
+- [X] Reduced motion funciona
+- [X] SEO configurado
+- [X] Performance aceitável
+- [X] Acessibilidade básica
+- [X] Código organizado
+- [X] Design consistente
 
 ## Resultado esperado
 

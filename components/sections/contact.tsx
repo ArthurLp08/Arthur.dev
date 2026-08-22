@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import { GithubIcon } from "@/components/common/github-icon";
+import { InstagramIcon } from "@/components/common/instagram-icon";
 import { LinkedinIcon } from "@/components/common/linkedin-icon";
 import { Reveal } from "@/components/common/reveal";
 import { profile } from "@/data/profile";
@@ -22,6 +23,12 @@ const contactLinks = [
     href: profile.linkedinUrl,
     external: true,
     Icon: LinkedinIcon,
+  },
+  {
+    label: "Instagram",
+    href: profile.instagramUrl,
+    external: true,
+    Icon: InstagramIcon,
   },
 ];
 
