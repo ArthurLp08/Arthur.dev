@@ -1,15 +1,17 @@
 export type Project = {
-  name: string;
+  title: string;
   description: string;
   image: string | null;
   technologies: string[];
+  category: string;
+  featured?: boolean;
   liveUrl: string | null;
-  repoUrl: string | null;
+  githubUrl: string | null;
 };
 
 export const projects = [
   {
-    name: "Corrige-Me",
+    title: "Corrige-Me",
     description: "Plataforma de correção de redações do ENEM utilizando IA.",
     image: "/projects/corrigeme.jpg",
     technologies: [
@@ -20,24 +22,28 @@ export const projects = [
       "Supabase",
       "Gemini API",
     ],
+    category: "Web · IA",
+    featured: true,
     liveUrl: "https://corrige-me.vercel.app/",
-    repoUrl: "https://github.com/ArthurLp08/CorrigeMe-App",
+    githubUrl: "https://github.com/ArthurLp08/CorrigeMe-App",
   },
   {
-    name: "FinTrack",
+    title: "FinTrack",
     description:
       "Aplicação para gerenciamento e visualização de finanças pessoais.",
     image: "/projects/fintrack.jpg",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
+    category: "Web · Finanças",
     liveUrl: "https://fiintrack.vercel.app",
-    repoUrl: "https://github.com/ArthurLp08/Fintrack",
+    githubUrl: "https://github.com/ArthurLp08/Fintrack",
   },
   {
-    name: "Vaultify",
+    title: "Vaultify",
     description: "Gerenciador e armazenador de senhas pessoais.",
     image: "/projects/vaultify.jpg",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
+    category: "Web · Segurança",
     liveUrl: "https://vaulltify.vercel.app/",
-    repoUrl: "https://github.com/ArthurLp08/Vaultify",
+    githubUrl: "https://github.com/ArthurLp08/Vaultify",
   },
 ] satisfies Project[];

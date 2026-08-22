@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/common/reveal";
 import { SectionHeading } from "@/components/common/section-heading";
-import { ProjectCard } from "@/components/sections/project-card";
+import { ProjectGallery } from "@/components/sections/project-gallery";
 import { projects } from "@/data/projects";
 
 export function Projects() {
@@ -11,18 +11,24 @@ export function Projects() {
     >
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
-          <SectionHeading caption="Projetos" title="O que eu construo." />
+          <div className="flex items-end justify-between gap-6">
+            <SectionHeading
+              caption={`${String(projects.length).padStart(2, "0")} / Projetos`}
+              title="O que eu construo."
+            />
+            <span
+              aria-hidden
+              className="hidden items-center gap-2 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground sm:inline-flex"
+            >
+              <span className="size-1.5 rounded-full bg-primary" />
+              Web
+            </span>
+          </div>
         </Reveal>
 
-        <ul className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
-            <Reveal key={project.name} delay={index * 0.08} className="h-full">
-              <li className="h-full">
-                <ProjectCard project={project} />
-              </li>
-            </Reveal>
-          ))}
-        </ul>
+        <div className="mt-12 lg:mt-16">
+          <ProjectGallery />
+        </div>
       </div>
     </section>
   );
