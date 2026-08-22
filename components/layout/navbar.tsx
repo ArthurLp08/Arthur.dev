@@ -11,8 +11,10 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { GithubIcon } from "@/components/common/github-icon";
+import { useActiveSection } from "@/components/common/use-active-section";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { navLinks, profile } from "@/data/profile";
+import { cn } from "@/lib/utils";
 
 const linkIcons: Record<string, LucideIcon> = {
   Sobre: User,
@@ -22,8 +24,11 @@ const linkIcons: Record<string, LucideIcon> = {
   Contato: Mail,
 };
 
+const sectionIds = navLinks.map((link) => link.href.replace("#", ""));
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const activeSection = useActiveSection(sectionIds);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -57,15 +62,27 @@ export function Navbar() {
         >
           {navLinks.map((link) => {
             const Icon = linkIcons[link.label];
+            const isActive = activeSection === link.href.replace("#", "");
             return (
               <a
                 key={link.href}
                 href={link.href}
                 aria-label={link.label}
-                title={link.label}
-                className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
+                aria-current={isActive ? "true" : undefined}
+                className={cn(
+                  "group relative rounded-full p-2 transition-all duration-300 ease-out hover:-translate-y-0.5",
+                  isActive
+                    ? "bg-primary/10 text-primary"
+                    : "text-muted-foreground hover:bg-primary/10 hover:text-primary"
+                )}
               >
                 <Icon className="size-[18px]" aria-hidden />
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 whitespace-nowrap rounded-lg border border-border bg-card px-2 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
+                >
+                  {link.label}
+                </span>
               </a>
             );
           })}
@@ -74,10 +91,15 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            title="GitHub"
-            className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
+            className="group relative rounded-full p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/10 hover:text-primary"
           >
             <GithubIcon className="size-[18px]" />
+            <span
+              aria-hidden
+              className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 whitespace-nowrap rounded-lg border border-border bg-card px-2 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
+            >
+              GitHub
+            </span>
           </a>
         </nav>
 

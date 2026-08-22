@@ -208,12 +208,12 @@ O visitante deve conseguir encontrar facilmente uma forma de entrar em contato.
 
 ## Tarefas
 
-- [ ] Criar footer
-- [ ] Nome
-- [ ] Cargo
-- [ ] Links
-- [ ] Copyright
-- [ ] Responsividade
+- [x] Criar footer
+- [x] Nome
+- [x] Cargo
+- [x] Links
+- [x] Copyright
+- [x] Responsividade
 
 Manter minimalista.
 
