@@ -16,7 +16,7 @@ export function Stack() {
             const Icon = techIcons[item.name];
             return (
               <Reveal key={item.name} delay={index * 0.04} className="h-full">
-                <li className="group h-full rounded-xl border border-border p-5 transition-colors duration-300 hover:border-primary/50 hover:bg-card">
+                <li className="group h-full rounded-xl border border-border p-5 transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:border-primary/50 hover:bg-card">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-xs text-muted-foreground/80 transition-colors duration-300 group-hover:text-primary">
                       {String(index + 1).padStart(2, "0")}

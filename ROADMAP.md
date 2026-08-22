@@ -266,23 +266,23 @@ Garantir uma experiência excelente em diferentes tamanhos.
 
 ## Tarefas
 
-- [ ] Mobile pequeno
-- [ ] Mobile grande
-- [ ] Tablet
-- [ ] Notebook
-- [ ] Desktop
-- [ ] Desktop grande
+- [x] Mobile pequeno
+- [x] Mobile grande
+- [x] Tablet
+- [x] Notebook
+- [x] Desktop
+- [x] Desktop grande
 
 Verificar:
 
-- [ ] Tipografia
-- [ ] Espaçamento
-- [ ] Imagens
-- [ ] Navbar
-- [ ] Hero
-- [ ] Projetos
-- [ ] Contato
-- [ ] Footer
+- [x] Tipografia
+- [x] Espaçamento
+- [x] Imagens
+- [x] Navbar
+- [x] Hero
+- [x] Projetos
+- [x] Contato
+- [x] Footer
 
 ## Critério de conclusão
 
