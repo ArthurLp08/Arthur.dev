@@ -4,7 +4,10 @@ import { experience } from "@/data/profile";
 
 export function Experience() {
   return (
-    <section id="experiencia" className="scroll-mt-16">
+    <section
+      id="experiencia"
+      className="flex min-h-svh flex-col justify-center scroll-mt-16"
+    >
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
           <SectionHeading caption="Trajetória" title="Minha jornada." />

@@ -12,6 +12,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { GithubIcon } from "@/components/common/github-icon";
+import { LinkTooltip } from "@/components/common/link-tooltip";
 import { usePreloaderReady } from "@/components/common/preloader";
 import { useActiveSection } from "@/components/common/use-active-section";
 import { MobileMenu } from "@/components/layout/mobile-menu";
@@ -86,17 +87,12 @@ export function Navbar() {
                 className={cn(
                   "group relative rounded-full p-2 transition-all duration-300 ease-out hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
                   isActive
-                    ? "bg-primary/10 text-primary"
+                    ? "bg-primary/10 text-primary motion-safe:-translate-y-0.5"
                     : "text-muted-foreground hover:bg-primary/10 hover:text-primary"
                 )}
               >
                 <Icon className="size-[18px]" aria-hidden />
-                <span
-                  aria-hidden
-                  className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 whitespace-nowrap rounded-lg border border-border bg-card px-2 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
-                >
-                  {link.label}
-                </span>
+                <LinkTooltip label={link.label} />
               </a>
             );
           })}
@@ -108,12 +104,7 @@ export function Navbar() {
             className="group relative rounded-full p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/10 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
           >
             <GithubIcon className="size-[18px]" />
-            <span
-              aria-hidden
-              className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 whitespace-nowrap rounded-lg border border-border bg-card px-2 py-1 text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
-            >
-              GitHub
-            </span>
+            <LinkTooltip label="GitHub" />
           </a>
         </nav>
 

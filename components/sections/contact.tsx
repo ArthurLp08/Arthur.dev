@@ -1,6 +1,7 @@
 import { Mail } from "lucide-react";
 import { GithubIcon } from "@/components/common/github-icon";
 import { InstagramIcon } from "@/components/common/instagram-icon";
+import { LinkTooltip } from "@/components/common/link-tooltip";
 import { LinkedinIcon } from "@/components/common/linkedin-icon";
 import { Reveal } from "@/components/common/reveal";
 import { profile } from "@/data/profile";
@@ -34,7 +35,10 @@ const contactLinks = [
 
 export function Contact() {
   return (
-    <section id="contato" className="scroll-mt-16">
+    <section
+      id="contato"
+      className="flex min-h-svh flex-col justify-center scroll-mt-16 bg-card/50"
+    >
       <div className="mx-auto w-full max-w-5xl px-6 pb-16 pt-24 text-center sm:pb-20 sm:pt-32">
         <Reveal className="flex flex-col items-center">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
@@ -63,10 +67,10 @@ export function Contact() {
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
                   aria-label={label}
-                  title={label}
-                  className="flex rounded-full p-3 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/10 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                  className="group relative flex rounded-full p-3 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/10 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
                 >
                   <Icon className="size-6 sm:size-7" aria-hidden />
+                  <LinkTooltip label={label} />
                 </a>
               </li>
             ))}

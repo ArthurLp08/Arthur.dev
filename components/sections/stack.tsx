@@ -5,7 +5,10 @@ import { stack } from "@/data/profile";
 
 export function Stack() {
   return (
-    <section id="stack" className="scroll-mt-16">
+    <section
+      id="stack"
+      className="flex min-h-svh flex-col justify-center scroll-mt-16"
+    >
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
           <SectionHeading caption="Stack" title="Ferramentas que uso." />
@@ -25,8 +28,12 @@ export function Stack() {
                   delay={index * 0.04}
                   className="w-[72%] shrink-0 snap-start sm:w-auto"
                 >
-                  <li className="group h-full rounded-xl border border-border p-5 transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:border-primary/50 hover:bg-card">
-                    <div className="flex items-center justify-between">
+                  <li className="group relative h-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] p-5 shadow-lg shadow-black/20 backdrop-blur-xl transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:border-primary/50 hover:bg-white/[0.07]">
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"
+                    />
+                    <div className="relative flex items-center justify-between">
                       <span className="font-mono text-xs text-muted-foreground/80 transition-colors duration-300 group-hover:text-primary">
                         {String(index + 1).padStart(2, "0")}
                       </span>

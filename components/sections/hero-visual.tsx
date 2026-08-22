@@ -25,21 +25,23 @@ const lines = [
 export function HeroVisual() {
   return (
     <div aria-hidden className="relative hidden lg:block">
-      <div className="absolute left-1/2 top-1/2 -z-10 size-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-[110px]" />
+      <div className="absolute left-1/2 top-1/2 -z-10 size-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-[110px]" />
 
-      <div className="rounded-xl border border-border bg-card/60 shadow-none backdrop-blur-sm">
-        <div className="flex items-center justify-between border-b border-border px-4 py-3">
+      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] shadow-xl shadow-black/20 backdrop-blur-xl">
+        <span className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+
+        <div className="relative flex items-center justify-between border-b border-white/[0.06] bg-white/[0.03] px-4 py-3">
           <span className="font-mono text-xs text-muted-foreground">
             arthur.ts
           </span>
           <span className="flex gap-1.5">
-            <span className="size-2 rounded-full bg-border" />
-            <span className="size-2 rounded-full bg-border" />
-            <span className="size-2 rounded-full bg-primary/60" />
+            <span className="size-2 rounded-full bg-white/20" />
+            <span className="size-2 rounded-full bg-white/20" />
+            <span className="size-2 rounded-full bg-primary/70" />
           </span>
         </div>
 
-        <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed">
+        <pre className="relative overflow-x-auto p-5 font-mono text-[13px] leading-relaxed">
           <code>
             {lines.map((line, index) => (
               <span key={index} className="block whitespace-pre">
