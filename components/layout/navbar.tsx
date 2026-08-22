@@ -2,13 +2,20 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FolderCode, Mail, User, type LucideIcon } from "lucide-react";
+import {
+  FolderCode,
+  Layers,
+  Mail,
+  User,
+  type LucideIcon,
+} from "lucide-react";
 import { GithubIcon } from "@/components/common/github-icon";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { navLinks, profile } from "@/data/profile";
 
 const linkIcons: Record<string, LucideIcon> = {
   Sobre: User,
+  Stack: Layers,
   Projetos: FolderCode,
   Contato: Mail,
 };

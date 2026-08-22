@@ -11,6 +11,7 @@ export type NavLink = {
 
 export const navLinks: NavLink[] = [
   { label: "Sobre", href: "#sobre" },
+  { label: "Stack", href: "#stack" },
   { label: "Projetos", href: "#projetos" },
   { label: "Contato", href: "#contato" },
 ];
@@ -44,3 +45,43 @@ export const about = {
     },
   ] satisfies Highlight[],
 };
+
+export type StackItem = {
+  name: string;
+  description: string;
+};
+
+export const stack = [
+  {
+    name: "React",
+    description: "Base das minhas interfaces componentizadas.",
+  },
+  {
+    name: "Next.js",
+    description: "Framework para aplicações React full-stack.",
+  },
+  {
+    name: "TypeScript",
+    description: "Tipagem forte e código mais confiável.",
+  },
+  {
+    name: "JavaScript",
+    description: "Fundação da lógica no navegador.",
+  },
+  {
+    name: "Tailwind CSS",
+    description: "Estilização rápida e consistente.",
+  },
+  {
+    name: "Supabase",
+    description: "Backend com banco de dados e autenticação.",
+  },
+  {
+    name: "Git",
+    description: "Versionamento e histórico do código.",
+  },
+  {
+    name: "GitHub",
+    description: "Colaboração e hospedagem dos projetos.",
+  },
+] satisfies StackItem[];

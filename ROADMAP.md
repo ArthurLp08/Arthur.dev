@@ -18,40 +18,40 @@ Criar a estrutura inicial do portfólio e implementar a primeira impressão visu
 
 ### Fundação
 
-- [ ] Configurar projeto Next.js
-- [ ] Configurar TypeScript
-- [ ] Configurar Tailwind CSS
-- [ ] Configurar shadcn/ui
-- [ ] Configurar Framer Motion
-- [ ] Configurar estrutura de pastas
-- [ ] Configurar metadata inicial
+- [X] Configurar projeto Next.js
+- [x] Configurar TypeScript
+- [X] Configurar Tailwind CSS
+- [X] Configurar shadcn/ui
+- [X] Configurar Framer Motion
+- [X] Configurar estrutura de pastas
+- [X] Configurar metadata inicial
 
 ### Navbar
 
-- [ ] Criar Navbar desktop
-- [ ] Criar Navbar mobile
-- [ ] Implementar navegação por âncoras
-- [ ] Implementar estado ao scroll
-- [ ] Adicionar link para GitHub
-- [ ] Criar menu mobile
-- [ ] Adicionar animações sutis
+- [X] Criar Navbar desktop
+- [X] Criar Navbar mobile
+- [X] Implementar navegação por âncoras
+- [X] Implementar estado ao scroll
+- [X] Adicionar link para GitHub
+- [X] Criar menu mobile
+- [X] Adicionar animações sutis
 
 ### Hero
 
-- [ ] Criar eyebrow
-- [ ] Criar título principal
-- [ ] Criar descrição
-- [ ] Criar CTA "Ver projetos"
-- [ ] Criar CTA "GitHub"
-- [ ] Criar elemento visual complementar
-- [ ] Implementar animação de entrada
-- [ ] Criar indicador de scroll
+- [X] Criar eyebrow
+- [X] Criar título principal
+- [X] Criar descrição
+- [X] Criar CTA "Ver projetos"
+- [X] Criar CTA "GitHub"
+- [X] Criar elemento visual complementar
+- [X] Implementar animação de entrada
+- [X] Criar indicador de scroll
 
 ### Responsividade
 
-- [ ] Desktop
-- [ ] Tablet
-- [ ] Mobile
+- [X] Desktop
+- [X] Tablet
+- [X] Mobile
 
 ## Critério de conclusão
 
@@ -67,13 +67,13 @@ Apresentar Arthur de forma profissional e pessoal.
 
 ## Tarefas
 
-- [ ] Criar seção Sobre
-- [ ] Criar título
-- [ ] Criar texto de apresentação
-- [ ] Criar pequenos destaques sobre o perfil
-- [ ] Criar composição visual
-- [ ] Adicionar animações
-- [ ] Implementar responsividade
+- [X] Criar seção Sobre
+- [X] Criar título
+- [X] Criar texto de apresentação
+- [X] Criar pequenos destaques sobre o perfil
+- [X] Criar composição visual
+- [X] Adicionar animações
+- [X] Implementar responsividade
 
 ## Critério de conclusão
 
@@ -89,17 +89,17 @@ Apresentar as principais tecnologias utilizadas.
 
 ## Tarefas
 
-- [ ] Criar seção Stack
-- [ ] React
-- [ ] Next.js
-- [ ] TypeScript
-- [ ] JavaScript
-- [ ] Tailwind CSS
-- [ ] Supabase
-- [ ] Git
-- [ ] GitHub
-- [ ] Criar composição visual
-- [ ] Adicionar microinterações
+- [x] Criar seção Stack
+- [x] React
+- [x] Next.js
+- [x] TypeScript
+- [x] JavaScript
+- [x] Tailwind CSS
+- [x] Supabase
+- [x] Git
+- [x] GitHub
+- [x] Criar composição visual
+- [x] Adicionar microinterações
 
 Não adicionar tecnologias que não representem conhecimento real.
 
@@ -249,7 +249,7 @@ Polir toda a experiência.
 
 - [ ] Revisar animações
 - [ ] Remover animações desnecessárias
-- [ ] Adicionar microinterações onde fizer sentido
+- [x] Adicionar microinterações onde fizer sentido
 - [ ] Respeitar reduced motion
 
 ## Critério de conclusão
