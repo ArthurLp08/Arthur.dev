@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { MotionProvider } from "@/components/common/motion-provider";
 import { MouseGlow } from "@/components/common/mouse-glow";
+import { Preloader } from "@/components/common/preloader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,7 +35,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Pular para o conteúdo
         </a>
         <MouseGlow />
-        <MotionProvider>{children}</MotionProvider>
+        <MotionProvider>
+          <Preloader>{children}</Preloader>
+        </MotionProvider>
       </body>
     </html>
   );

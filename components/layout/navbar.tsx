@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   FolderCode,
@@ -11,6 +12,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { GithubIcon } from "@/components/common/github-icon";
+import { usePreloaderReady } from "@/components/common/preloader";
 import { useActiveSection } from "@/components/common/use-active-section";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import { navLinks, profile } from "@/data/profile";
@@ -29,6 +31,7 @@ const sectionIds = navLinks.map((link) => link.href.replace("#", ""));
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const activeSection = useActiveSection(sectionIds);
+  const ready = usePreloaderReady();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -40,7 +43,11 @@ export function Navbar() {
   return (
     <motion.header
       initial={{ y: -16, opacity: 0, filter: "blur(6px)" }}
-      animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+      animate={
+        ready
+          ? { y: 0, opacity: 1, filter: "blur(0px)" }
+          : { y: -16, opacity: 0, filter: "blur(6px)" }
+      }
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled
@@ -51,8 +58,15 @@ export function Navbar() {
       <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
         <a
           href="#inicio"
-          className="text-sm font-semibold tracking-tight text-foreground transition-colors hover:text-primary"
+          className="flex items-center gap-2 text-sm font-semibold tracking-tight text-foreground transition-colors hover:text-primary"
         >
+          <Image
+            src="/logoAL.png"
+            alt=""
+            width={24}
+            height={24}
+            className="size-6"
+          />
           {profile.name}
         </a>
 

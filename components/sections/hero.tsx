@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "@/components/common/github-icon";
+import { usePreloaderReady } from "@/components/common/preloader";
 import { HeroVisual } from "@/components/sections/hero-visual";
 import { profile } from "@/data/profile";
 
@@ -23,6 +24,8 @@ const item: Variants = {
 };
 
 export function Hero() {
+  const ready = usePreloaderReady();
+
   return (
     <section
       id="inicio"
@@ -35,7 +38,7 @@ export function Hero() {
       <motion.div
         variants={container}
         initial="hidden"
-        animate="visible"
+        animate={ready ? "visible" : "hidden"}
         className="mx-auto grid w-full max-w-5xl gap-16 px-6 lg:grid-cols-[7fr_5fr] lg:items-center"
       >
         <div>
@@ -104,8 +107,8 @@ export function Hero() {
         href="#sobre"
         aria-label="Rolar para a seção Sobre"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
+        animate={ready ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ delay: ready ? 1.2 : 0, duration: 0.6 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 p-2 text-muted-foreground transition-colors hover:text-foreground"
       >
         <ChevronDown className="size-5 motion-safe:animate-bounce" aria-hidden />
