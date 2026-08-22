@@ -166,13 +166,13 @@ Apresentar experiências relevantes.
 
 ## Tarefas
 
-- [ ] Criar seção de experiência
-- [ ] Adicionar estágio quando aplicável
-- [ ] Adicionar formação
-- [ ] Adicionar experiências relevantes
-- [ ] Criar timeline ou composição equivalente
-- [ ] Adicionar animações
-- [ ] Responsividade
+- [x] Criar seção de experiência
+- [x] Adicionar estágio quando aplicável
+- [x] Adicionar formação
+- [x] Adicionar experiências relevantes
+- [x] Criar timeline ou composição equivalente
+- [x] Adicionar animações
+- [x] Responsividade
 
 Não inventar informações.
 

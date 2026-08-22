@@ -6,6 +6,7 @@ import {
   FolderCode,
   Layers,
   Mail,
+  Route,
   User,
   type LucideIcon,
 } from "lucide-react";
@@ -17,6 +18,7 @@ const linkIcons: Record<string, LucideIcon> = {
   Sobre: User,
   Stack: Layers,
   Projetos: FolderCode,
+  Trajetória: Route,
   Contato: Mail,
 };
 

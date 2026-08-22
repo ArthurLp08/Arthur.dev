@@ -13,6 +13,7 @@ export const navLinks: NavLink[] = [
   { label: "Sobre", href: "#sobre" },
   { label: "Stack", href: "#stack" },
   { label: "Projetos", href: "#projetos" },
+  { label: "Trajetória", href: "#experiencia" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -85,3 +86,37 @@ export const stack = [
     description: "Colaboração e hospedagem dos projetos.",
   },
 ] satisfies StackItem[];
+
+export type Experience = {
+  category: string;
+  title: string;
+  organization: string;
+  period: string;
+  description: string;
+};
+
+export const experience = [
+  {
+    category: "Experiência",
+    title: "Estágio supervisionado",
+    organization: "VTEC Automação",
+    period: "Ago. 2026 - Atualmente",
+    description:
+      "Integração dos conhecimentos do curso técnico à prática profissional.",
+  },
+  {
+    category: "Evento",
+    title: "Devathon",
+    organization: "SECOMP · IFCE",
+    period: "2026",
+    description: "Evento de desenvolvimento realizado durante a SECOMP.",
+  },
+  {
+    category: "Formação",
+    title: "Curso Técnico em Informática",
+    organization: "EEEP Professor Gustavo Augusto Lima",
+    period: "2024 – 2026",
+    description:
+      "Formação técnica que fundamentou minha entrada no desenvolvimento.",
+  },
+] satisfies Experience[];
