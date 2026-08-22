@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "@/components/common/github-icon";
 import { usePreloaderReady } from "@/components/common/preloader";
-import { HeroVisual } from "@/components/sections/hero-visual";
 import { profile } from "@/data/profile";
 
 const container: Variants = {
@@ -78,7 +78,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="h-11 px-6 text-sm font-medium"
+              className="h-11 rounded-full px-6 text-sm font-medium duration-300 ease-out hover:border-primary hover:bg-transparent hover:text-primary motion-safe:hover:-translate-y-0.5"
             >
               <a href="#projetos">Ver projetos</a>
             </Button>
@@ -86,7 +86,7 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="h-11 px-6 text-sm font-medium"
+              className="h-11 rounded-full px-6 text-sm font-medium duration-300 ease-out hover:border-primary hover:bg-primary hover:text-primary-foreground motion-safe:hover:-translate-y-0.5 dark:hover:border-primary dark:hover:bg-primary dark:hover:text-primary-foreground"
             >
               <a
                 href={profile.githubUrl}
@@ -100,7 +100,22 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <HeroVisual />
+        <div className="order-first mx-auto w-full max-w-[280px] sm:max-w-xs lg:order-none">
+          <div className="relative">
+            <div
+              aria-hidden
+              className="absolute left-1/2 top-1/2 -z-10 size-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-[110px]"
+            />
+            <Image
+              src="/perfil.png"
+              alt={`Foto de ${profile.name}`}
+              width={320}
+              height={320}
+              priority
+              className="aspect-square w-full rounded-full border border-border object-cover"
+            />
+          </div>
+        </div>
       </motion.div>
 
       <motion.a

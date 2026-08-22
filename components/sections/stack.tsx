@@ -11,34 +11,49 @@ export function Stack() {
           <SectionHeading caption="Stack" title="Ferramentas que uso." />
         </Reveal>
 
-        <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {stack.map((item, index) => {
-            const Icon = techIcons[item.name];
-            return (
-              <Reveal key={item.name} delay={index * 0.04} className="h-full">
-                <li className="group h-full rounded-xl border border-border p-5 transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:border-primary/50 hover:bg-card">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs text-muted-foreground/80 transition-colors duration-300 group-hover:text-primary">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    {Icon ? (
-                      <Icon
-                        aria-hidden
-                        className="size-5 text-muted-foreground/80 transition-colors duration-300 group-hover:text-foreground"
-                      />
-                    ) : null}
-                  </div>
-                  <h3 className="mt-4 text-base font-semibold text-foreground">
-                    {item.name}
-                  </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
-                  </p>
-                </li>
-              </Reveal>
-            );
-          })}
-        </ul>
+        <div className="relative -mx-6 mt-12 sm:mx-0">
+          <ul
+            aria-label="Stack de tecnologias"
+            tabIndex={0}
+            className="flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-2 [scrollbar-width:none] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring [&::-webkit-scrollbar]:hidden sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:focus-visible:outline-none lg:grid-cols-4"
+          >
+            {stack.map((item, index) => {
+              const Icon = techIcons[item.name];
+              return (
+                <Reveal
+                  key={item.name}
+                  delay={index * 0.04}
+                  className="w-[72%] shrink-0 snap-start sm:w-auto"
+                >
+                  <li className="group h-full rounded-xl border border-border p-5 transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:border-primary/50 hover:bg-card">
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs text-muted-foreground/80 transition-colors duration-300 group-hover:text-primary">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      {Icon ? (
+                        <Icon
+                          aria-hidden
+                          className="size-5 text-muted-foreground/80 transition-colors duration-300 group-hover:text-foreground"
+                        />
+                      ) : null}
+                    </div>
+                    <h3 className="mt-4 text-base font-semibold text-foreground">
+                      {item.name}
+                    </h3>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                  </li>
+                </Reveal>
+              );
+            })}
+          </ul>
+
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-background to-transparent sm:hidden"
+          />
+        </div>
       </div>
     </section>
   );

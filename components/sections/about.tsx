@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/common/reveal";
 import { SectionHeading } from "@/components/common/section-heading";
+import { HeroVisual } from "@/components/sections/hero-visual";
 import { about } from "@/data/profile";
 
 export function About() {
@@ -7,9 +8,15 @@ export function About() {
     <section id="sobre" className="scroll-mt-16 bg-card/50">
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-[5fr_7fr] lg:gap-16">
-          <Reveal>
-            <SectionHeading caption="Sobre" title="Quem eu sou." />
-          </Reveal>
+          <div>
+            <Reveal>
+              <SectionHeading caption="Sobre" title="Quem eu sou." />
+            </Reveal>
+
+            <Reveal delay={0.15} className="mt-12">
+              <HeroVisual />
+            </Reveal>
+          </div>
 
           <div>
             <Reveal delay={0.1}>

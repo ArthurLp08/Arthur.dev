@@ -68,10 +68,10 @@ export function MouseGlow() {
     <div
       ref={ref}
       aria-hidden="true"
-      className="pointer-events-none fixed left-0 top-0 z-30 size-[480px] rounded-full opacity-60 mix-blend-screen will-change-transform"
+      className="pointer-events-none fixed left-0 top-0 z-30 size-[480px] rounded-full opacity-75 mix-blend-screen will-change-transform"
       style={{
         background:
-          "radial-gradient(circle, rgba(163,230,53,0.055) 0%, rgba(163,230,53,0.02) 40%, transparent 65%)",
+          "radial-gradient(circle, rgba(163,230,53,0.09) 0%, rgba(163,230,53,0.032) 40%, transparent 65%)",
         transform: "translate3d(-600px, -600px, 0) translate(-50%, -50%)",
       }}
     />
