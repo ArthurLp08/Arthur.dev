@@ -39,8 +39,8 @@ export function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: -16, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ y: -16, opacity: 0, filter: "blur(6px)" }}
+      animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
         scrolled

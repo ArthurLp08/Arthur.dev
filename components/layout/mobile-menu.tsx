@@ -63,9 +63,9 @@ export function MobileMenu() {
               key="menu"
               id="menu-mobile"
               aria-label="Navegação mobile"
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
+              initial={{ opacity: 0, y: -8, filter: "blur(6px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              exit={{ opacity: 0, y: -8, filter: "blur(6px)" }}
               transition={{ duration: 0.2, ease: "easeOut" }}
               className="fixed inset-x-0 top-16 z-50 border-b border-border bg-background/95 backdrop-blur-md md:hidden"
             >
