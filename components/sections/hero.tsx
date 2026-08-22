@@ -25,7 +25,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden pb-24 pt-16"
+      className="relative flex min-h-svh flex-col justify-center overflow-hidden pb-24 pt-16"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 size-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/[0.07] blur-[140px]" />
