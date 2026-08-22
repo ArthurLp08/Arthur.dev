@@ -190,13 +190,13 @@ Facilitar o contato profissional.
 
 ## Tarefas
 
-- [ ] Criar seção de contato
-- [ ] CTA
-- [ ] LinkedIn
-- [ ] GitHub
-- [ ] Email
-- [ ] Microinterações
-- [ ] Responsividade
+- [x] Criar seção de contato
+- [x] CTA
+- [x] LinkedIn
+- [x] GitHub
+- [x] Email
+- [x] Microinterações
+- [x] Responsividade
 
 ## Critério de conclusão
 

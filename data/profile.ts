@@ -2,6 +2,8 @@ export const profile = {
   name: "Arthur Lopes",
   role: "Front-end Developer",
   githubUrl: "https://github.com/ArthurLp08",
+  linkedinUrl: "https://www.linkedin.com/in/arthurlp08/",
+  email: "josearthurlda@gmail.com",
 } as const;
 
 export type NavLink = {
