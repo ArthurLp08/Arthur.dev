@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "/",
-    siteName: title,
+    siteName: profile.name,
     title,
     description,
   },
