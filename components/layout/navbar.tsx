@@ -70,7 +70,7 @@ export function Navbar() {
                 aria-label={link.label}
                 aria-current={isActive ? "true" : undefined}
                 className={cn(
-                  "group relative rounded-full p-2 transition-all duration-300 ease-out hover:-translate-y-0.5",
+                  "group relative rounded-full p-2 transition-all duration-300 ease-out hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
                   isActive
                     ? "bg-primary/10 text-primary"
                     : "text-muted-foreground hover:bg-primary/10 hover:text-primary"
@@ -91,7 +91,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="group relative rounded-full p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/10 hover:text-primary"
+            className="group relative rounded-full p-2 text-muted-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/10 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
           >
             <GithubIcon className="size-[18px]" />
             <span

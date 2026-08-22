@@ -7,7 +7,7 @@ import { profile } from "@/data/profile";
 
 export function Contact() {
   return (
-    <section id="contato" className="scroll-mt-16">
+    <section id="contato" className="scroll-mt-16 bg-card/50">
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal className="flex flex-col items-center text-center">
           <p className="inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">

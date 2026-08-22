@@ -4,7 +4,7 @@ import { about } from "@/data/profile";
 
 export function About() {
   return (
-    <section id="sobre" className="scroll-mt-16">
+    <section id="sobre" className="scroll-mt-16 bg-card/50">
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-[5fr_7fr] lg:gap-16">
           <Reveal>
@@ -14,8 +14,8 @@ export function About() {
           <div>
             <Reveal delay={0.1}>
               <div className="space-y-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                {about.paragraphs.map((paragraph) => (
-                  <p key={paragraph.slice(0, 24)}>{paragraph}</p>
+                {about.paragraphs.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
                 ))}
               </div>
             </Reveal>

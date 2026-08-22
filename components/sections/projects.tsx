@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 
 export function Projects() {
   return (
-    <section id="projetos" className="scroll-mt-16">
+    <section id="projetos" className="scroll-mt-16 bg-card/50">
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
           <SectionHeading caption="Projetos" title="O que eu construo." />

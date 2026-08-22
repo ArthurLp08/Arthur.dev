@@ -229,28 +229,28 @@ Polir toda a experiência.
 
 ### UI
 
-- [ ] Revisar tipografia
-- [ ] Revisar espaçamentos
-- [ ] Revisar alinhamentos
-- [ ] Revisar bordas
-- [ ] Revisar cores
-- [ ] Revisar contraste
-- [ ] Revisar consistência
+- [x] Revisar tipografia
+- [x] Revisar espaçamentos
+- [x] Revisar alinhamentos
+- [x] Revisar bordas
+- [x] Revisar cores
+- [x] Revisar contraste
+- [x] Revisar consistência
 
 ### UX
 
-- [ ] Revisar navegação
-- [ ] Revisar CTAs
-- [ ] Revisar estados de hover
-- [ ] Revisar scroll
-- [ ] Revisar mobile
+- [x] Revisar navegação
+- [x] Revisar CTAs
+- [x] Revisar estados de hover
+- [x] Revisar scroll
+- [x] Revisar mobile
 
 ### Motion
 
-- [ ] Revisar animações
-- [ ] Remover animações desnecessárias
-- [ ] Adicionar microinterações onde fizer sentido
-- [ ] Respeitar reduced motion
+- [x] Revisar animações
+- [x] Remover animações desnecessárias
+- [x] Adicionar microinterações onde fizer sentido
+- [x] Respeitar reduced motion
 
 ## Critério de conclusão
 

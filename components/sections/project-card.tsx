@@ -62,7 +62,10 @@ export function ProjectCard({ project }: { project: Project }) {
         {hasLinks ? (
           <div className="mt-auto flex flex-wrap gap-3 pt-5">
             {project.liveUrl ? (
-              <Button asChild>
+              <Button
+                asChild
+                className="h-10 px-5 text-sm font-medium sm:h-8 sm:px-2.5"
+              >
                 <a
                   href={project.liveUrl}
                   target="_blank"
@@ -73,7 +76,11 @@ export function ProjectCard({ project }: { project: Project }) {
               </Button>
             ) : null}
             {project.repoUrl ? (
-              <Button asChild variant="outline">
+              <Button
+                asChild
+                variant="outline"
+                className="h-10 px-5 text-sm font-medium sm:h-8 sm:px-2.5"
+              >
                 <a
                   href={project.repoUrl}
                   target="_blank"
