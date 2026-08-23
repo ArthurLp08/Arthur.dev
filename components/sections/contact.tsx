@@ -37,7 +37,7 @@ export function Contact() {
   return (
     <section
       id="contato"
-      className="flex min-h-svh flex-col justify-center scroll-mt-16 bg-card/50"
+      className="flex flex-col justify-center scroll-mt-16 bg-card/50 sm:min-h-svh"
     >
       <div className="mx-auto w-full max-w-5xl px-6 pb-16 pt-24 text-center sm:pb-20 sm:pt-32">
         <Reveal className="flex flex-col items-center">

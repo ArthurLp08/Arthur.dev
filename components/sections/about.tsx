@@ -7,7 +7,7 @@ export function About() {
   return (
     <section
       id="sobre"
-      className="flex min-h-svh flex-col justify-center scroll-mt-16 bg-card/50"
+      className="flex flex-col justify-center scroll-mt-16 bg-card/50 sm:min-h-svh"
     >
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-[5fr_7fr] lg:gap-16">

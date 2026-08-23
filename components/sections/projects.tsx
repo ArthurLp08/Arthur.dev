@@ -1,19 +1,18 @@
 import { Reveal } from "@/components/common/reveal";
 import { SectionHeading } from "@/components/common/section-heading";
 import { ProjectGallery } from "@/components/sections/project-gallery";
-import { projects } from "@/data/projects";
 
 export function Projects() {
   return (
     <section
       id="projetos"
-      className="flex min-h-svh flex-col justify-center scroll-mt-16 bg-card/50"
+      className="flex flex-col justify-center scroll-mt-16 bg-card/50 sm:min-h-svh"
     >
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
           <div className="flex items-end justify-between gap-6">
             <SectionHeading
-              caption={`${String(projects.length).padStart(2, "0")} / Projetos`}
+              caption={`Projetos`}
               title="O que eu construo."
             />
             <span

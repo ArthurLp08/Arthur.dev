@@ -6,7 +6,7 @@ export function Experience() {
   return (
     <section
       id="experiencia"
-      className="flex min-h-svh flex-col justify-center scroll-mt-16"
+      className="flex flex-col justify-center scroll-mt-16 sm:min-h-svh"
     >
       <div className="mx-auto w-full max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
